@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+            <div class="jumbotron">
+                    <h1>TRIVIA GAME</h1> 
+                    <p>You have 15 seconds per question. Try to get them all right!</p> 
+                    <p class="timer">Time left:</p>
+                  </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="question1"></p>
+            </div>
+        </div>
+        <!--<div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="a1">
+                <span id="a1"></span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="a2">
+                <span id="a2"></span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="a3">
+                <span id="a3"></span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="a4">
+                <span id="a4"></span>
+            </label>
+        </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question2"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio2" class="b1">
+            <span id="b1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio2" class="b2">
+            <span id="b2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio2" class="b3">
+            <span id="b3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio2" class="b4">
+            <span id="b4"></span>
+        </label>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question3"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio3" class="c1">
+            <span id="c1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio3" class="c2">
+            <span id="c2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio3" class="c3">
+            <span id="c3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio3" class="c4">
+            <span id="c4"></span>
+        </label>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question4"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="d1">
+            <span id="d1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="d2">
+            <span id="d2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="d3">
+            <span id="d3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="d4">
+            <span id="d4"></span>
+        </label>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question5"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="f1">
+            <span id="f1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="f2">
+            <span id="f2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="f3">
+            <span id="f3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="f4">
+            <span id="f4"></span>
+        </label>
+    </div>
+    <div class="row">
+            <div class="col-sm-12">
+                <p id="question6"></p>
+            </div>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="g1">
+                <span id="g1"></span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="g2">
+                <span id="g2"></span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="g3">
+                <span id="g3"></span>
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optradio" class="g4">
+                <span id="g4"></span>
+            </label>
+        </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question7"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="h1">
+            <span id="h1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="h2">
+            <span id="h2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="h3">
+            <span id="h3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="h4">
+            <span id="h4"></span>
+        </label>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question8"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="i1">
+            <span id="i1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="i2">
+            <span id="i2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="i3">
+            <span id="i3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio" class="i4">
+            <span id="i4"></span>
+        </label>
+    </div>
+    <button type="button" class="btn btn-primary">Submit</button>
+   <div class="row">
+        <div class="col-sm-12">
+            <p id="question9"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="j1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="j2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="j3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="j4"></span>
+        </label>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p id="question10"></p>
+        </div>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="k1"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="k2"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="k3"></span>
+        </label>
+    </div>
+    <div class="radio-inline">
+        <label>
+            <input type="radio" name="optradio">
+            <span id="k4"></span>
+        </label>
+    </div>-->
+    </div>
+    <script src="assets/javascript/app(h).js"></script>
+</body>
+
+</html>
